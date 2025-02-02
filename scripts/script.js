@@ -1,8 +1,11 @@
-"use strict";
+import { startConfetti } from './confetti.js';
 const card = document.getElementById('card');
 const audio = document.getElementById('birthdayAudio');
 const confettiBtn = document.getElementById('confettiBtn');
 const giftBtn = document.getElementById('giftBtn');
+const sparkleContainer = document.createElement('div');
+sparkleContainer.classList.add('sparkle-container');
+document.body.appendChild(sparkleContainer); // Add sparkle container to the body
 card.addEventListener('click', () => {
     card.style.transform = 'rotateY(180deg)';
     if (audio.paused) {

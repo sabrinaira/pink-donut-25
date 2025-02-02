@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/confetti.css">
 </head>
 <body>
+  <div id="tsparticles"></div>
     <div class="card-container">
         <div class="card" id="card">
             <div class="front">
@@ -23,6 +25,6 @@
         </div>
     </div>
     <audio id="birthdayAudio" src="assets/bday_360.mp3"></audio>
-    <script src="script.js"></script>
-    <script src="confetti.js"></script>
+    <script type="module" src="scripts/script.js"></script>
+    <script type="module" src="scripts/confetti.js"></script>
 </html>
