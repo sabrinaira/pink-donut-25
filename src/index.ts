@@ -1,4 +1,4 @@
-import { startConfetti } from './confetti.js';
+import { startConfetti } from './confetti';
 
 const card = document.getElementById('card') as HTMLElement;
 const audio = document.getElementById('birthdayAudio') as HTMLAudioElement;
@@ -11,7 +11,7 @@ document.body.appendChild(sparkleContainer); // Add sparkle container to the bod
 
 card.addEventListener('click', () => {
   card.style.transform = 'rotateY(180deg)';
-  
+
   if (audio.paused) {
     audio.play();
   }
