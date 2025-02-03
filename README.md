@@ -1,1 +1,0 @@
-A birthday greeting for my friend
