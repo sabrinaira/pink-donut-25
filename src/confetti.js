@@ -1,4 +1,4 @@
-export function startConfetti() {
+function startConfetti() {
     var confettiContainer = document.createElement('div');
     confettiContainer.classList.add('confetti-container');
     document.body.appendChild(confettiContainer);
